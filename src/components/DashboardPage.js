@@ -1,9 +1,9 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const DashboardPage = () => (
-  <div>
-    Dashboard page content
-  </div>
+  <Link to="/buttons">
+    <h4>Buttons</h4>
+  </Link>
 );
 
 export default DashboardPage;

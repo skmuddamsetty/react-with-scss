@@ -1,0 +1,75 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shawdow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+.buttons-page-container {
+  max-width: 95vw;
+  // background-color: var(--color-grey-light-1);
+  margin: 1rem auto;
+  box-shadow: var(--shadow-dark);
+  min-height: 95vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-dark);
+  background-image: linear-gradient(
+    to left,
+    var(--color-grey-light-1),
+    var(--color-grey-light-2)
+  );
+  flex: 0 0 50%;
+  &-btn {
+    margin-bottom: 2rem;
+    background-image: linear-gradient(to right, #ff3366, #ba265d);
+    text-transform: uppercase;
+    border-radius: 100px;
+    display: inline-block;
+    color: #fff;
+    padding: 1.5rem 0;
+  }
+}
