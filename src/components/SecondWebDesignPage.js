@@ -54,6 +54,65 @@ const SecondWebDesignPage = () => (
         </div>
       </div>
     </header>
+    <main>
+      <div className="swpd-one-stop-shop">
+        <div className="swpd-one-stop-shop__div">
+          <img
+            src="images/sale.png"
+            alt="Hero"
+            className="swpd-one-stop-shop__img"
+          />
+        </div>
+        <div className="swpd-one-stop-shop__text-box">
+          <h2 className="swpd__h2">One Stop Shop</h2>
+          <p className="swpd__p">
+            Run a successful online store with one subscription - collect
+            payments, ship products, track inventory, manage customers, improve
+            SEO, run marketing campaigns and promotions.
+          </p>
+          <button className="swpd__btn-light-blue">start selling</button>
+        </div>
+      </div>
+
+      <div className="swpd-cards">
+        <div className="swpd-card">
+          <div className="swpd-card__div">
+            <img
+              src="images/improve.png"
+              alt="Hero"
+              className="swpd-card__img"
+            />
+          </div>
+          <div className="swpd-card__text-box">
+            <h2 className="swpd-card__h2">Improve Sales</h2>
+            <p className="swpd-card__p">
+              Use advanced analytics and tracking tools to understand how your
+              website is faring with your customers. Choose from hundreds of
+              themes designed to improve conversion and sales, and achieve
+              immediate results.
+            </p>
+            <button className="swpd__btn-light-blue">browse themes</button>
+          </div>
+        </div>
+        <div className="swpd-card">
+          <div className="swpd-card__div">
+            <img
+              src="images/integrate.png"
+              alt="Hero"
+              className="swpd-card__img"
+            />
+          </div>
+          <div className="swpd-card__text-box">
+            <h2 className="swpd-card__h2">Integrate & Extend</h2>
+            <p className="swpd-card__p">
+              Use 300+ APIs & webhooks and integrate with third party systems,
+              install extensions and plugins, or develop your own in Python.
+            </p>
+            <button className="swpd__btn-light-blue">start building</button>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 );
 
