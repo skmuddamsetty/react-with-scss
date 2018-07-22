@@ -29,14 +29,13 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
   );
   background-color: #36096d;
   background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
-  background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-  background-color: #d4418e;
-  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
   background-color: #1fd1f9;
   background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+  background-image: linear-gradient(
+    to top right,
+    $dp2-color-primary-dark,
+    $dp2-color-primary
+  );
 }
 
 .swpd__navbar {
@@ -156,24 +155,23 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
 
 @keyframes moveInRandom {
   0% {
-    transform: translateX(2rem);
+    transform: translateX(1rem);
   }
 
   25% {
-    transform: translateX(-2rem);
+    transform: translateX(-1rem);
   }
 
   50% {
-    transform: translateY(-2rem);
+    transform: translateY(-1rem);
   }
 
-  80% {
+  75% {
     transform: translateX(-1rem);
   }
 
   100% {
-    opacity: 1;
-    transform: translate(0);
+    transform: translateY(-1rem);
   }
 }
 
@@ -182,11 +180,7 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
   img {
     height: 100%;
     width: 100%;
-    &:hover {
-      animation-name: moveInRandom;
-      animation-duration: 5s;
-      animation-timing-function: ease-out;
-    }
+    animation: moveInRandom 15s infinite ease-in-out;
   }
 }
 
@@ -483,6 +477,7 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
       font-size: 2.4rem;
       color: #404d59;
       font-weight: 400;
+      margin-bottom: 2rem;
     }
     &__input {
       font-size: 1.6rem;
@@ -492,9 +487,9 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
       letter-spacing: 0.22px;
       border-bottom: 1px solid currentColor;
       background-color: transparent;
-      padding: 2rem 0;
-      margin-bottom: 1rem;
+      padding: 1rem 0;
       transition: all 0.5s;
+      margin-bottom: 2rem;
       &:focus {
         border-bottom: 1px solid $dp2-color-primary;
       }
@@ -505,7 +500,14 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
     }
     &__btn {
       color: $dp1-color-grey-light-1;
-      background-color: $dp2-color-primary-light;
+      font-size: 1.2rem;
+      padding: 1rem;
+      border-radius: 2rem;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+      background-color: $dp2-color-primary-dark;
     }
   }
   &__logo {
