@@ -1,0 +1,265 @@
+$dp2-color-primary: #36096d;
+$dp2-color-primary-light: #37d5d6;
+$dp2-color-primary-dark: #5065d4;
+
+$dp1-color-grey-light-1: #faf9f9;
+$dp1-color-grey-light-2: #f4f2f2;
+$dp1-color-grey-light-3: #f0eeee;
+$dp1-color-grey-light-4: #ccc;
+
+$dp1-color-grey-dark-1: #333;
+$dp1-color-grey-dark-2: #777;
+$dp1-color-grey-dark-3: #999;
+
+$dp1-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$dp1-shawdow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+$dp1-line: 1px solid var($dp1-color-grey-light-2);
+.second_web_design_page {
+  max-width: 100vw;
+}
+
+.swpd__header {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to top right,
+    $dp2-color-primary-dark,
+    $dp2-color-primary-light
+  );
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
+
+.swpd__navbar {
+  height: 7rem;
+  padding: 5.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.02px;
+}
+
+.swpd__header {
+}
+
+.swpd__logo {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 4.9rem;
+}
+
+.swpd__main__nav__ul {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  cursor: pointer;
+  & > * {
+    &:not(:last-child) {
+      margin-right: 5.2rem;
+    }
+  }
+}
+
+.swpd__main__nav {
+  &__item {
+    color: $dp1-color-grey-light-1;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
+
+.swpd__ctas {
+  display: flex;
+  justify-content: space-around;
+  & > * {
+    font-size: 1.5rem;
+    letter-spacing: 0.02px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    height: 4rem;
+    width: 10rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+    transition: all 0.2s;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    &:hover {
+      transform: scaleX(1.1);
+    }
+  }
+}
+
+.swpd__btn {
+  &-white {
+    color: $dp2-color-primary;
+  }
+  &-blue {
+    background-image: linear-gradient(
+      to top right,
+      $dp2-color-primary-dark,
+      $dp2-color-primary-light
+    );
+    border: 1px solid $dp1-color-grey-light-1;
+    color: $dp1-color-grey-light-1;
+  }
+}
+
+.swpd__header__content {
+  display: flex;
+  padding: 0 6rem;
+  & > * {
+    color: $dp1-color-grey-light-1;
+  }
+}
+
+.swpd__header__intro {
+  flex: 0 0 50%;
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+}
+
+.hero__text {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 0.72px;
+  text-shadow: 2px 2px 8px $dp1-color-grey-dark-1;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.hero__p {
+  margin: 0 0 12.1rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.09px;
+  font-weight: 300;
+  line-height: 3.4rem;
+  max-width: 70%;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.swpd__header__hero__img {
+  flex: 0 0 50%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.request__box {
+  display: flex;
+  align-items: center;
+}
+
+.request__email {
+  flex: 0 0 65%;
+  margin-right: 2rem;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  color: $dp1-color-grey-light-1;
+  letter-spacing: 0.22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+  &:focus {
+    border-bottom: 1px solid $dp1-color-grey-light-1;
+  }
+}
+
+.swpd__btn-request {
+  flex: 1;
+  font-size: 1.4rem;
+  letter-spacing: 0.02px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  text-align: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: $dp2-color-primary-dark;
+  margin: 0;
+  display: flex;
+  padding: 0.5rem 0.6rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.1rem;
+  cursor: pointer;
+  transition: all 0.7s;
+  &:hover {
+    background-image: linear-gradient(
+      to top right,
+      $dp2-color-primary-dark,
+      $dp2-color-primary-light
+    );
+    color: $dp1-color-grey-light-1;
+    span {
+      margin-right: -3px;
+    }
+  }
+}
+
+.request__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.2rem;
+  width: 5.2rem;
+  background: rgba(76, 85, 166, 0.1);
+  border-radius: 50%;
+  font-size: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
