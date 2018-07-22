@@ -2,6 +2,7 @@ $dp2-color-primary: #36096d;
 $dp2-color-primary-light: #37d5d6;
 $dp2-color-primary-dark: #5065d4;
 $dp2-color-secondary-bg: #f1f3f4;
+$dp2-color-third-bg: #fbfcfc;
 
 $dp1-color-grey-light-1: #faf9f9;
 $dp1-color-grey-light-2: #f4f2f2;
@@ -28,6 +29,14 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
   );
   background-color: #36096d;
   background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  background-color: #d4418e;
+  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
 }
 
 .swpd__navbar {
@@ -44,8 +53,8 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
 }
 
 .swpd__logo {
-  height: 5rem;
-  width: 5rem;
+  height: 7rem;
+  width: 7rem;
   margin-left: 4.9rem;
 }
 
@@ -124,13 +133,14 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
 }
 
 .hero__text {
-  font-size: 6rem;
-  font-weight: 300;
+  font-size: 4rem;
+  font-weight: 400;
   letter-spacing: 0.72px;
   text-shadow: 2px 2px 8px $dp1-color-grey-dark-1;
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+  text-transform: uppercase;
 }
 .hero__p {
   margin: 0 0 12.1rem 0;
@@ -200,6 +210,10 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
   transition: all 0.2s;
   &:focus {
     border-bottom: 1px solid $dp1-color-grey-light-1;
+  }
+  &::-webkit-input-placeholder {
+    font-weight: 300;
+    color: lighten($dp2-color-third-bg, 95%);
   }
 }
 
@@ -361,10 +375,13 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
 .swpd-card {
   background-color: #ffffff;
   margin: 5rem auto;
-  height: 40rem;
-  padding: 5rem;
+
+  //   min-height: 50rem;
+  padding: 3rem;
   max-width: 101rem;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 50px;
   &__img {
     flex: 0 0 40%;
@@ -399,4 +416,113 @@ $dp1-line: 1px solid var($dp1-color-grey-light-2);
   columns: #bbc1c5;
   letter-spacing: 0.5px;
   line-height: 3.4rem;
+}
+
+.swpd__blue-box {
+  background-color: $dp2-color-third-bg;
+  padding: 3rem;
+  & > * {
+    color: $dp1-color-grey-light-1;
+  }
+}
+.swpd-blue-card {
+  background-image: linear-gradient(
+    to top right,
+    $dp2-color-primary-dark,
+    $dp2-color-primary
+  );
+  margin: 5rem auto;
+  padding: 3.4rem;
+  max-width: 115rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.45);
+  &__title {
+    padding: 3rem;
+    flex: 0 0 35%;
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+  &__email-box {
+    flex: 0 0 65%;
+  }
+}
+
+.swpd__footer {
+  background-color: $dp2-color-third-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 115rem;
+  margin: 5rem auto;
+  &__box-1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 0 0 33%;
+  }
+  &__box-2 {
+    flex: 0 0 43%;
+    & > * {
+      color: black;
+      font-size: 1.6rem;
+      color: #404d59;
+      cursor: pointer;
+    }
+  }
+  &__box-3 {
+    flex: 0 0 23%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    &__title {
+      font-size: 2.4rem;
+      color: #404d59;
+      font-weight: 400;
+    }
+    &__input {
+      font-size: 1.6rem;
+      border: none;
+      outline: none;
+      color: $dp2-color-primary-dark;
+      letter-spacing: 0.22px;
+      border-bottom: 1px solid currentColor;
+      background-color: transparent;
+      padding: 2rem 0;
+      margin-bottom: 1rem;
+      transition: all 0.5s;
+      &:focus {
+        border-bottom: 1px solid $dp2-color-primary;
+      }
+      &::-webkit-input-placeholder {
+        font-weight: 300;
+        color: lighten($dp2-color-primary, 60%);
+      }
+    }
+    &__btn {
+      color: $dp1-color-grey-light-1;
+      background-color: $dp2-color-primary-light;
+    }
+  }
+  &__logo {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+.swpd__footer__nav {
+  &__ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 3rem 0;
+  }
+  &__item {
+    flex: 0 0 33%;
+    margin-bottom: 4.3rem;
+  }
 }

@@ -3,7 +3,7 @@ const SecondWebDesignPage = () => (
   <div className="second_web_design_page">
     <header className="swpd__header">
       <div className="swpd__navbar">
-        <img src="images/dollar_logo.svg" alt="Logo" className="swpd__logo" />
+        <img src="images/logo-flower.png" alt="Logo" className="swpd__logo" />
         <nav className="swpd__main__nav">
           <ul className="swpd__main__nav__ul">
             <li className="swpd__main__nav__item">
@@ -33,7 +33,7 @@ const SecondWebDesignPage = () => (
       </div>
       <div className="swpd__header__content">
         <div className="swpd__header__intro">
-          <h1 className="hero__text">Sell like a Pro</h1>
+          <h1 className="hero__text">Best ecommerce website</h1>
           <p className="hero__p">
             Build your successful e-commerce business with one single
             application.
@@ -73,7 +73,6 @@ const SecondWebDesignPage = () => (
           <button className="swpd__btn-light-blue">start selling</button>
         </div>
       </div>
-
       <div className="swpd-cards">
         <div className="swpd-card">
           <div className="swpd-card__div">
@@ -111,7 +110,76 @@ const SecondWebDesignPage = () => (
             <button className="swpd__btn-light-blue">start building</button>
           </div>
         </div>
+        <div className="swpd__blue-box">
+          <div className="swpd-blue-card">
+            <div className="swpd-blue-card__title">
+              Revolutionize your online business today!
+            </div>
+            <div className="swpd-blue-card__email-box">
+              <div className="request__box">
+                <input
+                  placeholder="Your e-mail address"
+                  type="text"
+                  className="request__email"
+                />
+                <button className="swpd__btn-request">
+                  Request Demo<span className="request__icon">&rarr;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer className="swpd__footer">
+        <div className="swpd__footer__box-1">
+          <img
+            src="images/logo-flower.png"
+            alt="Logo"
+            className="swpd__footer__logo"
+          />
+        </div>
+        <div className="swpd__footer__box-2">
+          <nav className="swpd__footer__nav">
+            <ul className="swpd__footer__nav__ul">
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">Home</a>
+              </li>
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">Contact</a>
+              </li>
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">FAQ</a>
+              </li>
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">Features</a>
+              </li>
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">Pricing</a>
+              </li>
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">Career</a>
+              </li>
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">Blog</a>
+              </li>
+              <li className="swpd__footer__nav__item">
+                <a className="swpd__footer__nav__link">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div className="swpd__footer__box-3">
+          <h4 className="swpd__footer__box-3__title">Talk to us</h4>
+          <input
+            placeholder="Phone Number"
+            type="number"
+            className="swpd__footer__box-3__input"
+          />
+          <button className="swpd__footer__box-3__btn">
+            Request Call Back
+          </button>
+        </div>
+      </footer>
     </main>
   </div>
 );
