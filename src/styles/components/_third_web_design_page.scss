@@ -1,0 +1,188 @@
+$dp3-color-primary: #e975a8;
+$dp3-color-secondary: #726cf8;
+$dp3-color-primary-light: #37d5d6;
+$dp3-color-primary-dark: #5065d4;
+$dp3-color-secondary-bg: #f1f3f4;
+$dp3-color-third-bg: #fbfcfc;
+
+$dp3-color-grey-light-1: #faf9f9;
+$dp3-color-grey-light-2: #f4f2f2;
+$dp3-color-grey-light-3: #f0eeee;
+$dp3-color-grey-light-4: #ccc;
+
+$dp3-color-grey-dark-1: #333;
+$dp3-color-grey-dark-2: #777;
+$dp3-color-grey-dark-3: #999;
+
+$dp3-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$dp3-shawdow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+$dp3-line: 1px solid var($dp1-color-grey-light-2);
+
+.third_web_design_page_container {
+  max-width: 100vw;
+}
+.twpd__header {
+  min-height: 95vh;
+  background-image: linear-gradient(
+    320deg,
+    lighten($dp3-color-secondary, 5%) 0%,
+    lighten($dp3-color-primary, 5%) 95%
+  );
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.twpd__navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.twpd__main__nav {
+  &__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    // flex: 0 0 50%;
+    color: $dp1-color-grey-light-1;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
+.twpd__logo {
+  height: 7rem;
+  width: 7rem;
+}
+
+.twpd__hero__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    margin: 0;
+  }
+  &__title {
+    color: $dp3-color-grey-light-1;
+    font-size: 6.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 0 1.4rem 2.4rem rgba(50, 48, 58, 0.25);
+    white-space: nowrap;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+  &__input {
+    font-weight: 300;
+    line-height: 2.8rem;
+    padding: 2.1rem 3rem;
+    width: 50%;
+    outline: none;
+    font-size: 1.8rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border: 0;
+    background: $dp3-color-grey-light-1;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1.4rem 2.4rem rgba(50, 48, 58, 0.25);
+    box-shadow: 0 1.4rem 2.4rem rgba(50, 48, 58, 0.25);
+    color: $dp3-color-grey-dark-2;
+    &::-webkit-input-placeholder {
+      font-weight: 300;
+      color: lighten($dp3-color-grey-dark-2, 15%);
+    }
+  }
+  &__sub-title {
+    padding-top: 5.7rem;
+    color: $dp3-color-grey-light-1;
+    font-weight: 400;
+    font-size: 1.8rem;
+    display: block;
+  }
+}
+
+.twpd__hero__box__btn {
+  margin-top: 1rem;
+}
+
+.twpd-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  border-radius: 3.6rem;
+  border: 0;
+  color: $dp3-color-grey-light-1;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  &-yellow {
+    padding: 0.9rem 2.5rem;
+    font-size: 1.6rem;
+    background-color: #f5a623;
+  }
+}
+
+.twpd__orange__section {
+  margin-top: -10rem;
+  background-color: #fc9842;
+  background-image: linear-gradient(
+    250deg,
+    lighten(#fc9842, 5%) 0%,
+    lighten(#fe5f75, 0%) 74%
+  );
+  background-color: #d14545;
+  background-image: linear-gradient(316deg, #d14545 0%, #ff9933 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 18.2rem 17rem;
+  & > * {
+    padding-bottom: 10rem;
+  }
+  &__div {
+    flex: 0 0 50%;
+  }
+  &__box {
+    display: flex;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+  }
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+    & > * {
+      color: $dp3-color-grey-light-1;
+      margin-bottom: 3rem;
+    }
+    &__title {
+      font-weight: 600;
+      font-size: 4.8rem;
+      line-height: 4.8rem;
+    }
+    &__sub-title {
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      text-align: left;
+      letter-spacing: 0.22px;
+    }
+  }
+}
